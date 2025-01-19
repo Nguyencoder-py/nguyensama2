@@ -34,7 +34,7 @@ def main():
         location = find_image_on_screen(add_quick_button_img)
         if location:
             adb_tap(location[0], location[1])
-            time.sleep(1.5)
+            time.sleep(1)
 
             # Nhấn nút "Trao đổi"
             print("Tìm nút 'Trao đổi'...")
@@ -42,7 +42,7 @@ def main():
             location = find_image_on_screen(exchange_button_img)
             if location:
                 adb_tap(location[0], location[1])
-                time.sleep(1)
+                time.sleep(1.5)
 
                 # Nhấn vào vị trí bất kỳ
                 print("Nhấn vào vị trí bất kỳ...")
@@ -50,8 +50,13 @@ def main():
                 time.sleep(1)
                 print("Nhấn vào vị trí bất kỳ...")
                 adb_tap(100, 100)
+                time.sleep(0.5)
+                print("Nhấn vào vị trí bất kỳ...")
+                adb_tap(100, 100)
+                time.sleep(0.5)
+                print("Nhấn vào vị trí bất kỳ...")
+                adb_tap(100, 100)
                 time.sleep(1)
-
                 # Kiểm tra nút "Confirm"
                 print("Tìm nút 'Confirm'...")
                 confirm_button_img = "continue.png"
