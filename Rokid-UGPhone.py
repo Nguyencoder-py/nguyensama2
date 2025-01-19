@@ -47,7 +47,7 @@ def main():
                 # Nhấn vào vị trí bất kỳ
                 print("Nhấn vào vị trí bất kỳ...")
                 adb_tap(100, 100)
-                time.sleep(0.5)
+                time.sleep(1)
                 print("Nhấn vào vị trí bất kỳ...")
                 adb_tap(100, 100)
                 time.sleep(1)
