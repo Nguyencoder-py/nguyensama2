@@ -53,9 +53,6 @@ def main():
                 time.sleep(0.5)
                 print("Nhấn vào vị trí bất kỳ...")
                 adb_tap(100, 100)
-                time.sleep(0.5)
-                print("Nhấn vào vị trí bất kỳ...")
-                adb_tap(100, 100)
                 time.sleep(1)
                 # Kiểm tra nút "Confirm"
                 print("Tìm nút 'Confirm'...")
